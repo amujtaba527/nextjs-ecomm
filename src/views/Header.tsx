@@ -20,7 +20,7 @@ function Header() {
       </div>
       <div className="hidden lg:inline-flex gap-10 items-center ">
         {APP_LINKS.map((link) => (
-          <Link href={link.href}>
+          <Link href={link.href} key={link.key}>
             <p className="font-semibold">{link.name}</p>
           </Link>
         ))}
